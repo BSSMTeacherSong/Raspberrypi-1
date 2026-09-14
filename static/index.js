@@ -9,6 +9,7 @@ increase.addEventListener("click", function() {
 })
 
 submit.addEventListener("click", function() {
+    location.href='http://10.150.2.69:5000/'+n
     n = 0;
     num.innerHTML = n;
 })
