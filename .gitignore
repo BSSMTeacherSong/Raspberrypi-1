@@ -1,0 +1,15 @@
+# 가상환경
+myvenv/
+
+# 파이썬 캐시 파일
+__pycache__/
+*.pyc
+
+# 환경변수/비밀정보 파일
+.env
+
+# 에디터/OS 관련 부산물
+.vscode/
+.idea/
+.DS_Store
+
