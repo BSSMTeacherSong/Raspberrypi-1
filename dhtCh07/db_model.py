@@ -2,7 +2,7 @@ import pymysql
 
 class MySQL:
     def __init__(self):
-        self.db = pymysql.connect(host='localhost', user='song', password='q1w2e3', db='webapp')
+        self.db = pymysql.connect(host='localhost', user='song', password='q1w2e3', db='study')
         self.cur = self.db.cursor()
         self.cur.execute("""
             create table if not exists record_dht(
