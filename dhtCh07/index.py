@@ -1,8 +1,9 @@
 from flask import Flask, request, render_template, jsonify
-import db_model
+import db_model import MySQL
 import sensor_dht
 
 app = Flask(__name__)
+db = MySQL()
 
 @app.route("/")
 def home():
@@ -16,7 +17,7 @@ def insertdb():
 
 @app.route('/api/record')
 def selectAll():
-    result = db_model.find_all()
+    result = db_model.selectAll()
     return jsonify(result)
 
 if __name__ == "__main__":
