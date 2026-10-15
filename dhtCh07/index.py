@@ -12,12 +12,12 @@ def home():
 @app.route('/api/now')
 def insertdb():
     temp, hum = sensor_dht.get_now()
-    result = db_model.add(temp, hum)
+    result = db.add(temp, hum)
     return result
 
 @app.route('/api/record')
 def selectAll():
-    result = db_model.selectAll()
+    result = db.selectAll()
     return jsonify(result)
 
 if __name__ == "__main__":
