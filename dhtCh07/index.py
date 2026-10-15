@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template, jsonify
-import db_model import MySQL
+from db_model import MySQL
 import sensor_dht
 
 app = Flask(__name__)
